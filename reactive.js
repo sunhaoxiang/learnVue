@@ -23,7 +23,7 @@ function observer (value) {
   }
   
   Object.keys(value).forEach((key) => {
-      defineReactive(value, key, value[key])
+    defineReactive(value, key, value[key])
   })
 }
 
