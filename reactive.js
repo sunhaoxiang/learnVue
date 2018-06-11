@@ -1,8 +1,3 @@
-// function cb (val) {
-//   // 渲染视图
-//   console.log("视图更新啦～")
-// }
-
 // 响应式实现
 function defineReactive (obj, key, val) {
   // 一个Dep类对象
@@ -23,7 +18,7 @@ function defineReactive (obj, key, val) {
   })
 }
 
-// Vue订阅数据的方法
+// 监听器
 function observer (value) {
   if (!value || (typeof value !== 'object')) {
     return
