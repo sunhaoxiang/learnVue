@@ -66,7 +66,7 @@ Dep.target = null
 
 class Vue {
   // Vue构造类
-  constructor(options) {
+  constructor (options) {
     this._data = options.data
     observer(this._data)
     new Watcher()
@@ -75,11 +75,11 @@ class Vue {
 }
 
 // 测试
-let o = new Vue({
+let vm = new Vue({
   data: {
     test: "I am test."
   }
 })
 setTimeout(() => {
-  o._data.test = "Hello World."  // 视图更新啦～
-}, 3000);
+  vm._data.test = "Hello World."  // 视图更新啦～
+}, 3000)
